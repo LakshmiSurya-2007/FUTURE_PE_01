@@ -11,10 +11,11 @@
 
 ```
 summer-sip/
-├── index.html          ← Homepage (headline, brand story, value proposition)
-├── menu.html           ← Menu / Services page (4 categories, 16 items)
-├── cta.html            ← Call-to-action blocks (4 CTAs)
-└── README.md           ← You are here
+├── index.html             ← Homepage (headline, brand story, value proposition)
+├── menu.html              ← Menu / Services page (4 categories, 16 items)
+├── cta.html               ← Call-to-action blocks (4 CTAs)
+├── README.md              ← You are here
+└── Task1_Website_Copy.md  ← Prompts I used generate these files
 ```
 
 ---
@@ -85,14 +86,6 @@ Copy individual sections from each HTML file into your existing layout. All styl
 
 ---
 
-## ✏️ How to Edit Content
-
-- **Prices** — Search for `₹` in any file and update the values
-- **Item names / descriptions** — Find the item by name and edit the text directly
-- **Shop address / phone** — Search for `Penumantra` and update with your full address and contact
-- **Button links** — Search for `#` placeholder links and replace with real URLs (booking form, WhatsApp, etc.)
-
----
 
 ## 📞 Contact & Social (fill these in)
 
