@@ -15,7 +15,7 @@ summer-sip/
 ├── menu.html              ← Menu / Services page (4 categories, 16 items)
 ├── cta.html               ← Call-to-action blocks (4 CTAs)
 ├── README.md              ← You are here
-└── Task1_Website_Copy.md  ← Prompts I used generate these files
+└── Task1_Website_Copy.md  ← Prompts I used to generate these files
 ```
 
 ---
