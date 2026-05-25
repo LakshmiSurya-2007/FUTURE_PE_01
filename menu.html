@@ -1,0 +1,193 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  .pg{font-family:'Lora',Georgia,serif;color:var(--color-text-primary);max-width:680px}
+  .pg-hero{text-align:center;padding:2rem 1rem 1.5rem}
+  .pg-tag{display:inline-block;background:#FAC775;color:#412402;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:.75rem;font-family:'Lora',serif}
+  .pg-title{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:600;color:#412402;line-height:1.2;margin-bottom:.5rem}
+  .pg-title em{font-style:italic;color:#854F0B}
+  .pg-sub{font-size:.95rem;color:var(--color-text-secondary);line-height:1.7;max-width:440px;margin:0 auto}
+
+  .sec{margin-bottom:2rem}
+  .sec-head{display:flex;align-items:center;gap:10px;padding:0 0 .6rem;margin-bottom:1rem;border-bottom:.5px solid var(--color-border-tertiary)}
+  .sec-icon{width:36px;height:36px;border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+  .sec-icon.amber{background:#FAC775;color:#412402}
+  .sec-icon.teal{background:#9FE1CB;color:#04342C}
+  .sec-icon.coral{background:#F5C4B3;color:#4A1B0C}
+  .sec-icon.green{background:#C0DD97;color:#173404}
+
+  .sec-info{}
+  .sec-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--color-text-primary);line-height:1.2}
+  .sec-tagline{font-size:.78rem;color:var(--color-text-secondary);margin-top:2px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px}
+  .card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.1rem;position:relative;transition:border-color .15s}
+  .card:hover{border-color:var(--color-border-secondary)}
+
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.4rem}
+  .card-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--color-text-primary);line-height:1.3;flex:1;padding-right:.5rem}
+  .card-badge{font-size:.68rem;font-family:'Lora',serif;letter-spacing:.06em;padding:3px 8px;border-radius:10px;white-space:nowrap;flex-shrink:0;align-self:flex-start}
+  .badge-new{background:#9FE1CB;color:#04342C}
+  .badge-hot{background:#FAC775;color:#412402}
+  .badge-fav{background:#F5C4B3;color:#4A1B0C}
+  .badge-healthy{background:#C0DD97;color:#173404}
+
+  .card-desc{font-size:.82rem;color:var(--color-text-secondary);line-height:1.6;margin-bottom:.75rem}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;border-top:.5px solid var(--color-border-tertiary);padding-top:.6rem}
+  .card-price{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:#854F0B}
+  .card-price span{font-size:.72rem;font-family:'Lora',serif;color:var(--color-text-secondary);font-weight:400;margin-left:2px}
+  .card-order{font-size:.72rem;font-family:'Lora',serif;color:var(--color-text-secondary);display:flex;align-items:center;gap:3px}
+
+  .note-bar{background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:.75rem 1rem;text-align:center;font-size:.8rem;color:var(--color-text-secondary);line-height:1.6;margin-top:.5rem}
+  .note-bar strong{color:#854F0B;font-weight:500}
+</style>
+
+<h2 class="sr-only">Summer Sip menu page showing four categories: cool drinks, ice creams, cool desserts, and healthy snacks with names, descriptions, and prices in INR</h2>
+
+<div class="pg">
+
+  <div class="pg-hero">
+    <div class="pg-tag"><i class="ti ti-menu-2" aria-hidden="true" style="font-size:11px;vertical-align:1px;margin-right:4px"></i>Our Menu</div>
+    <h1 class="pg-title">Every Sip, Every Scoop,<br><em>Made for Summer.</em></h1>
+    <p class="pg-sub">From chilled glasses to frozen scoops — everything on our menu is crafted to make your summer sweeter, cooler, and a little more special.</p>
+  </div>
+
+  <!-- SECTION 1: COOL DRINKS -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="sec-icon amber"><i class="ti ti-glass-full" aria-hidden="true"></i></div>
+      <div class="sec-info">
+        <div class="sec-name">Special Cool Drinks</div>
+        <div class="sec-tagline">Chilled, refreshing & made to order</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-top"><span class="card-name">Raw Mango Jaljeera Cooler</span><span class="card-badge badge-hot">Summer Special</span></div>
+        <p class="card-desc">Tangy raw mango blended with roasted jeera, mint, and a pinch of black salt. Bold, zingy, and dangerously refreshing on a hot afternoon.</p>
+        <div class="card-footer"><div class="card-price">₹50 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> 100% natural</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Tender Coconut Neer Mojito</span><span class="card-badge badge-new">New</span></div>
+        <p class="card-desc">Fresh coconut water swirled with lemon, crushed mint, and a pinch of chat masala. Light, hydrating, and tastes like the coast itself.</p>
+        <div class="card-footer"><div class="card-price">₹60 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> No sugar added</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Rose Sabja Lemonade</span><span class="card-badge badge-fav">Fan Fav</span></div>
+        <p class="card-desc">Sweet rose syrup, freshly squeezed lemon, and plump sabja seeds in chilled water. Gorgeous pink, naturally cooling, and so satisfying.</p>
+        <div class="card-footer"><div class="card-price">₹45 <span>onwards</span></div><div class="card-order"><i class="ti ti-star" aria-hidden="true" style="font-size:13px"></i> Bestseller</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Tamarind Spice Sharbat</span><span class="card-badge badge-hot">Andhra Style</span></div>
+        <p class="card-desc">A bold, tangy tamarind drink with red chilli, jaggery, and cold water. A true Andhra classic — sweet, sour, and spicy all at once.</p>
+        <div class="card-footer"><div class="card-price">₹40 <span>onwards</span></div><div class="card-order"><i class="ti ti-flame" aria-hidden="true" style="font-size:13px"></i> Local favourite</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: ICE CREAMS -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="sec-icon teal"><i class="ti ti-ice-cream" aria-hidden="true"></i></div>
+      <div class="sec-info">
+        <div class="sec-name">Ice Creams</div>
+        <div class="sec-tagline">Scooped fresh, served cold</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-top"><span class="card-name">Mango Malai Kulfi</span><span class="card-badge badge-hot">Summer Special</span></div>
+        <p class="card-desc">Creamy, slow-set kulfi packed with real Alphonso mango and a hint of cardamom. Rich, dense, and melt-in-your-mouth good.</p>
+        <div class="card-footer"><div class="card-price">₹40 <span>onwards</span></div><div class="card-order"><i class="ti ti-star" aria-hidden="true" style="font-size:13px"></i> Bestseller</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Coconut Jaggery Ice Cream</span><span class="card-badge badge-new">New</span></div>
+        <p class="card-desc">House-made ice cream sweetened with natural jaggery and real coconut shavings. A wholesome, guilt-light scoop you'll come back for.</p>
+        <div class="card-footer"><div class="card-price">₹50 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> No refined sugar</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Sitaphal Scoop</span><span class="card-badge badge-fav">Fan Fav</span></div>
+        <p class="card-desc">Custard apple ice cream made with fresh pulp, lightly sweetened and perfectly smooth. If you haven't tried it, you're missing out.</p>
+        <div class="card-footer"><div class="card-price">₹55 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> Seasonal fruit</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Chocolate Peanut Sundae</span><span class="card-badge badge-fav">Kids' Pick</span></div>
+        <p class="card-desc">Two scoops of chocolate ice cream drizzled with warm peanut sauce, crushed nuts, and a wafer stick on top. Pure joy in a cup.</p>
+        <div class="card-footer"><div class="card-price">₹70 <span>onwards</span></div><div class="card-order"><i class="ti ti-heart" aria-hidden="true" style="font-size:13px"></i> Kids' favourite</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: COOL DESSERTS -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="sec-icon coral"><i class="ti ti-bowl" aria-hidden="true"></i></div>
+      <div class="sec-info">
+        <div class="sec-name">Cool Desserts</div>
+        <div class="sec-tagline">Cold, sweet & irresistible</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-top"><span class="card-name">Mango Shrikhand</span><span class="card-badge badge-hot">Summer Special</span></div>
+        <p class="card-desc">Thick hung curd sweetened with sugar and swirled with fresh mango pulp. Creamy, chilled, and unbelievably smooth — a summer soul food.</p>
+        <div class="card-footer"><div class="card-price">₹55 <span>onwards</span></div><div class="card-order"><i class="ti ti-star" aria-hidden="true" style="font-size:13px"></i> Bestseller</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Falooda Delight</span><span class="card-badge badge-fav">Fan Fav</span></div>
+        <p class="card-desc">Rose syrup, vermicelli, sabja seeds, chilled milk and a scoop of ice cream — all layered in one tall glass. A dessert and a drink rolled into one.</p>
+        <div class="card-footer"><div class="card-price">₹80 <span>onwards</span></div><div class="card-order"><i class="ti ti-heart" aria-hidden="true" style="font-size:13px"></i> Most loved</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Chilled Semiya Payasam</span><span class="card-badge badge-new">New</span></div>
+        <p class="card-desc">Traditional Andhra semiya payasam served cold with a garnish of cashews and raisins. Comforting, familiar, and so much better chilled.</p>
+        <div class="card-footer"><div class="card-price">₹45 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> Homestyle recipe</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Tender Coconut Pudding</span><span class="card-badge badge-healthy">Light</span></div>
+        <p class="card-desc">Silky coconut milk pudding set with agar-agar and topped with soft coconut pieces. Delicate, dairy-light, and absolutely cooling.</p>
+        <div class="card-footer"><div class="card-price">₹60 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> Dairy-free option</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: HEALTHY SNACKS -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="sec-icon green"><i class="ti ti-salad" aria-hidden="true"></i></div>
+      <div class="sec-info">
+        <div class="sec-name">Special & Healthy Snacks</div>
+        <div class="sec-tagline">Light bites built for summer</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-top"><span class="card-name">Sprout Chaat Bowl</span><span class="card-badge badge-healthy">Healthy</span></div>
+        <p class="card-desc">Mixed sprouts tossed with cucumber, tomato, raw mango, lemon juice, and chaat masala. High in protein, low on guilt, and big on flavour.</p>
+        <div class="card-footer"><div class="card-price">₹50 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> High protein</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Cucumber Mint Sandwich</span><span class="card-badge badge-new">New</span></div>
+        <p class="card-desc">Chilled multigrain bread layered with hung curd, sliced cucumber, and fresh mint chutney. Cool, crisp, and perfect for a light summer bite.</p>
+        <div class="card-footer"><div class="card-price">₹55 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> Light & filling</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Fruit Chaat with Chilli Lime</span><span class="card-badge badge-fav">Fan Fav</span></div>
+        <p class="card-desc">Seasonal fruits tossed in a tangy chilli-lime dressing with a sprinkle of rock salt and fresh coriander. Sweet, spicy, and endlessly snackable.</p>
+        <div class="card-footer"><div class="card-price">₹60 <span>onwards</span></div><div class="card-order"><i class="ti ti-star" aria-hidden="true" style="font-size:13px"></i> Bestseller</div></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Roasted Makhana Crunch</span><span class="card-badge badge-healthy">Healthy</span></div>
+        <p class="card-desc">Fox nuts roasted in ghee with cumin, black pepper, and sea salt. A light, crunchy, and nutritious snack that pairs perfectly with any cool drink.</p>
+        <div class="card-footer"><div class="card-price">₹40 <span>onwards</span></div><div class="card-order"><i class="ti ti-leaf" aria-hidden="true" style="font-size:13px"></i> Gluten-free</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-bar">
+    <strong>Fresh. Local. Made with love.</strong> — Prices are starting prices and may vary by size or add-ons. Ask us about seasonal specials!<br>
+    <span style="font-size:.75rem">📍 Summer Sip, Penumantra, Andhra Pradesh</span>
+  </div>
+
+</div>
